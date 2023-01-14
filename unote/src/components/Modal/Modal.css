@@ -1,0 +1,187 @@
+.darkBG{
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.modal_background {
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    border-radius: 60px;
+    width: 50%;
+}
+
+.account_background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 3rem;
+}
+
+.signin_header{
+    padding: 10px 0px;
+}
+
+.signin_header > h1 {
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.solid {
+    border-top: 3px solid #bbb;
+    width: 100%;
+    text-align: center;
+}
+
+.account_input{
+    padding: 0.5rem 0rem;
+}
+
+.account_name {
+    display: flex;
+    flex-direction: row;
+}
+
+.firstname{
+    width: 100%;
+}
+
+.underline{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.account_change_form {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0rem 0rem 1.5rem 0rem;
+}
+
+.lastname{
+    margin-left: 1rem;
+    width: 100%;
+}
+
+.account_input > label {
+    font-weight: normal;
+    font-size: 1rem;
+    text-align: left;
+    padding: 10px 0px;
+}
+
+.account_input > input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px 0px;
+}
+
+.account_button > button {
+    width: 100%;
+    background-color: #98b7eb;
+    color: Black;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-align: center;
+
+    cursor: pointer;
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+.exit_icon {
+    cursor: pointer;
+    display: flex;
+}
+
+.account_input > textarea {
+    height: auto;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px 0px;
+}
+
+.account_input > p {
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .modal_background {
+        width: 80%;
+    }
+
+    .account_input{
+        padding: 0.1rem 0rem;
+    }
+
+    .signin_header > h1 {
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-device-width: 475px) {
+    .modal_background {
+        width: 80%;
+    }
+
+    .account_name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lastname{
+        margin-left: 0rem;
+        width: 100%;
+    }
+
+    .signin_header > h1 {
+        font-size: 1rem;
+    }
+
+    .account_input{
+        padding: 0.2rem 0rem;
+    }
+
+    .account_input > label {
+        font-size: 0.8rem;
+    }
+
+    .account_input > input {
+        margin: 2px 0px;
+        font-size: 0.8rem;
+    }
+
+    .account_change_form {
+        font-size: 0.9rem;
+        padding: 0rem 0rem 1rem 0rem;
+    }
+
+    .account_button > button {
+        font-size: 0.8rem;
+        padding: 10px 15px;
+
+        margin: 1rem 0rem 1rem 0rem;
+    }
+
+    .account_background {
+        padding: 0.5rem 2rem;
+    }
+}
+
+@media only screen and (max-device-width: 425px) {
+    .modal_background {
+        width: 90%;
+    }
+}

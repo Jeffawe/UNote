@@ -1,0 +1,54 @@
+.navbar_home {
+    display: flex;
+    flex-direction: row;
+    border: 1px black solid;
+    padding: 0.5rem 0rem;
+}
+
+.navbar_text {
+    text-align: right;
+    width: 100%;
+}
+
+.navbar_sidebutton {
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.navbar_profile{
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    button{
+        font-size: 0.7rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media screen and (max-device-width:425px) {
+    button{
+        font-size: 0.6rem;
+        padding: 0.2rem 0.8rem;
+    }
+
+    .navbar_sidebutton {
+        flex-direction: column;
+        gap: 3px;
+        padding-right: 10px;
+        width: 100%;
+        align-items: flex-end;
+    }
+}

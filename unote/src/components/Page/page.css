@@ -1,0 +1,95 @@
+.page_background {
+    float: right;
+    background-color: azure;
+}
+
+.page_header > h1 {
+    padding: 1rem 1rem;
+    background-color: azure;
+    width: 100%;
+}
+
+.page_header{
+    display: flex;
+    flex-direction: row;
+}
+
+.page_header > button {
+    width: 20%;
+}
+
+.page_header > textarea {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    height: auto;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.page_buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+textarea {
+    width: 100%;
+    height: 90vh;
+    font-size: 1rem;
+    padding: 2rem 1rem;
+    background-color: azure;
+}
+
+.page_emptytext {
+    padding: 1rem 1rem;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    width: 100%;
+}
+
+.page_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+}
+
+.page_buttons > p {
+    border: 2px solid black;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+@media screen and (max-width:768px) {
+    .page_buttons > button {
+        font-size: 0.7rem;
+    }
+    .page_buttons > p {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .page_header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .page_buttons {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        padding-bottom: 1rem;
+        gap: 0.5rem;
+    }
+}
