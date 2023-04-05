@@ -10,6 +10,7 @@ This project was built using the following technologies:
 <li>React</li>
 <li>Express</li>
 <li>MySQL</li>
+<li>NodeJS</li>
 </ul>
 
 <h3>Contributions</h3>
